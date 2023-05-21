@@ -13,11 +13,11 @@ use App\Http\Controllers\PeopleController;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-Route::get('/show', [PeopleController::class, 'show']);
-Route::get('/show/{id}', [PeopleController::class, 'index']);
-Route::post('/create', [PeopleController::class, 'create']);
-Route::delete('/delete/{id}', [PeopleController::class, 'delete']);
-Route::put('/update/{id}', [PeopleController::class, 'update']);
+Route::get('/malina/49951/people', [PeopleController::class, 'show']);
+Route::get('/malina/49951/people/{id}', [PeopleController::class, 'index']);
+Route::post('/malina/49951/people', [PeopleController::class, 'create']);
+Route::delete('/malina/49951/people/{id}', [PeopleController::class, 'delete']);
+Route::put('/malina/49951/people/{id}', [PeopleController::class, 'update']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();

@@ -53,7 +53,7 @@ class PeopleController extends Controller
         $record = PeopleModel::find($id);
 
         if (!$record) {
-            return response()->json(['error' => 'Person not found'], 204);
+            return response()->json(['error' => 'record not found'], 204);
         }
 
         $record->update($request->all());
